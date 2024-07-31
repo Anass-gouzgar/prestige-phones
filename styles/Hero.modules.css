@@ -1,0 +1,30 @@
+ul.list-icons li::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url('../public/assets/images/checked.svg');
+    background-size: contain;
+    position: relative;
+    left: -5px;
+  }
+
+
+  .emphasis:after {
+    content: '';
+    display: block;
+    width: 60%;
+    left: 26%;
+    top: 60px;
+    bottom: 1px;
+    height: 22px;
+    background: #2cb5a6;
+    position: absolute;
+    transform: translateY(-30px);
+    transition: transform .1s ease-out,opacity .1s ease-out;
+    border-radius: 5px;
+    pointer-events: none;
+    z-index:-10;
+
+}
+

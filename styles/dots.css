@@ -1,0 +1,13 @@
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(
+    --swiper-pagination-bullet-inactive-color,
+    #e65411
+  ) !important;
+  border: none;
+}

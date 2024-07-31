@@ -1,0 +1,25 @@
+/* Add this to your global or component-level CSS */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(70%); */
+  min-width: 50px; /* Set the wider width of the circle */
+  height: 50px;
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #ffffff; /* Set circle color to white */
+  margin-inline: -20px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "\2192"; /* Unicode character for right arrow (→) */
+  font-size: 24px; /* Set the arrow size */
+  color: #ff0600; /* Set arrow color to orange */
+  transform: scale(0.5); /* Set the scale to reduce arrow size */
+  
+}

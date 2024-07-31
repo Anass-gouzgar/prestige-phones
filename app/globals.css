@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hero section backgound image */
+.mainBG {
+  background-image: url("../public/assets/images/Hero.png");
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.step-item:before {
+  content: "";
+  width: 29px;
+  height: 29px;
+  background: #bababa;
+  border-radius: 100%;
+  border: 4px solid #d0d0d0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+
+/* active step */
+.step-item.active:before {
+  background: #e65411;
+  width: 32px;
+  height: 32px;
+  /*  border color */
+  border-color: #f1a671;
+  margin-left: 0;
+  margin-top: 12px;
+}
+.selected:before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../public/assets/icons/icons/check.png");
+  background-size: contain;
+  position: relative;
+  left: -25px;
+  top: 20px;
+}
+
+/* swipper styles */
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 80%;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  margin-inline: -20px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "\2192";
+  font-size: 24px;
+  color: #ff0600;
+  transform: scale(0.5);
+}
+
+/* border shadow for the map section cards */
+
+.custom-shadow {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
